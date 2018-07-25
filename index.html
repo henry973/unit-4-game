@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector Game</title>
 </head>
 <body>
+    <div class="header">
+        <div class="header-left">
     <h1>Crystal Collector!</h1>
+    </div>
+    </div>
     <br>
+    
+    <div class="content">
     <p>You will be given a random at the start of the game.
     <br> 
     <br>
@@ -23,11 +31,7 @@
     <br>
     Each time the game starts, the game will change the values of each crystal.
     </p>
-
-
-    <h2>Wins:</h2>
-    <br>
-    <h2>Losses:</h2>
+    </div>
 
     
 
@@ -39,6 +43,31 @@
     </div>
     <br>
     <br>
-    <h2>Your total score is:</h2>
+
+    <div class="count">
+    <h2>Wins:
+        <span id="winCount">0</span>
+    </h2>
+    <br>
+    <h2>Losses:
+        <span id ="lossCount">0</span>
+    </h2>
+    </div>
+    <br>
+
+    <div class="target score">
+    <h2>Target score:
+        <span id="targetScore">0</span>
+    </h2>
+    </div>
+    <br>
+    <div class="score">
+    <h2>Your total score is:
+        <span id="yourScore">0</span> </span>
+    </h2>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
